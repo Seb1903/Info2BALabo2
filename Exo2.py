@@ -1,10 +1,22 @@
 import sys 
+import re
 #print('hello', sysargv[1])python Exo2.py Nombres.txt
+nombre = r'\d+'
+n = re.compile(nombre)
 with open(sys.argv[1]) as f : 
     texte = f.readlines()
-    print(texte)
-    
 
+    for i in range(len(texte)) : 
+        texte[i]
+
+
+
+# prof :
+with open(sys.argv[1]) as file : 
+    for i, line in enumerate(file) :
+        instances = p.findall(line)
+        if len(instances) != 0 : 
+            print('Line {}: {}'.format(i+1, ", ".join(instances)) )
 
 
 
