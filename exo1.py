@@ -9,9 +9,8 @@ print(c.match(tel) is not None)
 entier = r'\+?[1-9][0-9]*'
 entieri = input('votre entier : ')
 e = re.compile(entier)
-print(e.match(entieri) +is not None)
+print(e.match(entieri) is not None)
 
-#add git
 
 
 

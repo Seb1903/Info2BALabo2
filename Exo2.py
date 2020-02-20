@@ -5,7 +5,7 @@
 
 import sys 
 #print('hello', sysargv[1])
-with open(str(sysargv[1]), 'r') as file : 
+with open(str(sys.argv[1]), 'r') as file : 
     texte = file.read()
     print(texte)
-print(sysargv[1])
+    print(sys.argv[1])
